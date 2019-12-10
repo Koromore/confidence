@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+  <script src="js/viewport.js"></script>
+  <link rel="stylesheet" href="css/gx-animate.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/page.css" />
+  <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script src="js/jq_scroll.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#scrollDiv").Scroll({
+        line: 1,
+        speed: 500,
+        timer: 3000,
+        up: "but_up",
+        down: "but_down"
+      })
+    })
+  </script>
+</head>
+
+<body>
+  <!-- loading -->
+  <div class="loading">
+    <div class="loading-text">
+      <!-- 	<div class="load-item">
+				<img src="images/img4.png">
+			</div> -->
+      <p class="load-tet">加载0%</p>
+    </div>
+  </div>
+  <div class="wrap page-wrap">
+    <!-- page1 start -->
+    <div class="page page1" data-lock-next="true" data-lock-prev="true">
+      <div class="page-inner">
+        <div class="content">
+          <img src="images/year.png" alt="" srcset="">
+          <img src="images/title.png" alt="" srcset="">
+          <img src="images/fingerprint.png" alt="" srcset="" class="next">
+          <img src="images/hint.png" alt="" srcset="">
+          <img src="images/rule.png" alt="" srcset="" class="rule">
+        </div>
+      </div>
+    </div>
+    <!-- page1 end -->
+
+    <!-- page2 start -->
+    <div class="page page2" data-lock-next="true" data-lock-prev="true">
+      <div class="page-inner">
+        <div class="content">
+          <div class="face_img_box">
+            <div class="face_img"></div>
+          </div>
+          <!-- <div class="hint hint1">
+            <img src="images/partition2.png" alt="" srcset=""><br>
+            点击 <img src="images/add_s.png">，上传图片
+          </div> -->
+          <!-- <div class="hint hint2">
+            <div>重新上传</div>
+            <div>确定</div>
+          </div> -->
+          <!-- <div class="hint hint3">
+            <div>49<span>%</span></div>
+            <div>正在检测中...</div>
+          </div> -->
+          <!-- <div class="hint hint4">
+            <img src="images/partition2.png" alt="" srcset=""><br>
+            非人脸照片，请重新上传
+          </div> -->
+          <div class="hint hint5">
+            <img src="images/partition2.png" alt="" srcset=""><br>
+            请上传正面人脸照片
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- page2 end -->
+
+    <!-- page3 start -->
+    <div class="page page3" data-lock-next="true" data-lock-prev="true">
+      <div class="page-inner">
+        <div class="img_box">
+          <img src="" width="100%" alt="" srcset="" class="result_img">
+        </div>
+
+        <!-- <div class="name">
+          解雨臣
+        </div> -->
+        <div class="but">
+          <div>重新测算</div>
+          <div>轻松入手</div>
+          <p>长按保存图片到相册</p>
+        </div>
+      </div>
+    </div>
+    <!-- page3 end -->
+
+    <!-- page4 start -->
+    <div class="page page4" data-lock-next="true" data-lock-prev="true">
+      <div class="page-inner">
+        <div class="banner">
+          <ul>
+            <li><img src="images/banner1.png" alt=""></li>
+            <li><img src="images/banner2.png" alt=""></li>
+            <li><img src="images/banner3.png" alt=""></li>
+            <li><img src="images/banner4.png" alt=""></li>
+            <li><img src="images/banner5.png" alt=""></li>
+            <li><img src="images/banner6.png" alt=""></li>
+            <li><img src="images/banner7.png" alt=""></li>
+            <li><img src="images/banner8.png" alt=""></li>
+          </ul>
+          <ol></ol>
+          <div class="btn btn_l">&lt;</div>
+          <div class="btn btn_r">&gt;</div>
+        </div>
+        <div class="banner_text">
+          <ul>
+            <li><img src="images/banner1_text.png" alt=""></li>
+            <li><img src="images/banner2_text.png" alt=""></li>
+            <li><img src="images/banner3_text.png" alt=""></li>
+            <li><img src="images/banner4_text.png" alt=""></li>
+            <li><img src="images/banner5_text.png" alt=""></li>
+            <li><img src="images/banner6_text.png" alt=""></li>
+            <li><img src="images/banner7_text.png" alt=""></li>
+            <li><img src="images/banner8_text.png" alt=""></li>
+          </ul>
+        </div>
+        <div class="but">
+          即可带走
+        </div>
+      </div>
+    </div>
+    <!-- page4 end -->
+  </div>
+  <div class="tk tk-load tk-main" id="share-model"></div>
+
+  <!-- 弹框 -->
+  <div class="el-model">
+
+    <div class="el-contaoner zoomIn">
+      <!-- <div class="el-header">提示</div> -->
+      <div class="el-content">
+        <div class="el_title">
+          游戏规则
+          <img src="images/partition.png" alt="">
+        </div>
+        <div class="rule_text">
+          <span>
+            2019年12月15日-2020年1月8日</span>
+          将测试结果<span>长按保存到相册,分享</span>到朋友圈后将<span>截图发送</span>到丰田金融服务微信公众号，即可获得<span>10元滴滴快车现金券1张。</span>
+        </div>
+        <div class="hint">
+          *丰田金融服务（中国）有限公司保留对该活动的最终解释权
+        </div>
+        <!-- 很遗憾 -->
+        <!--  -->
+        <div class="el-success">
+          <img src="images/shut.png" alt="" srcset="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="js/jquery-1.7.2.min.js"></script> -->
+  <script src="js/PageSlider.js"></script>
+  <script src="js/index.js?999"></script>
+  <script src="js/claw.js?999"></script>
+  <script src="js/page.js?999"></script>
+  <script src="js/compress.js?999"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("body").height($("body")[0].clientHeight)
+    })
+
+    if (/Android [4-6]/.test(navigator.appVersion)) {
+      window.addEventListener("resize", function () {
+        if (
+          document.activeElement.tagName == "INPUT" ||
+          document.activeElement.tagName == "TEXTAREA"
+        ) {
+          window.setTimeout(function () {
+            document.activeElement.scrollIntoViewIfNeeded()
+          }, 0)
+        }
+      })
+    }
+    $("input,select,textarea").blur(function () {
+      setTimeout(function () {
+        window.scrollTo(0, 0)
+      }, 100)
+    })
+    document.body.addEventListener(
+      "touchmove",
+      function (e) {
+        e.preventDefault()
+      }, {
+        passive: false
+      }
+    )
+  </script>
+</body>
+
+</html>
