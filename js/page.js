@@ -64,16 +64,17 @@ $(function () {
   $('.btn_l').click(function () {
     index--
     move()
-    console.log(index)
+    // console.log(index)
   })
   $('.btn_r').click(function () {
     index++
     move()
-    console.log(index)
+    // console.log(index)
   })
 
   // 移动事件
   function move() {
+    // console.log(index)
     if (index == length) {
       $('.banner ul').css({ left: 0 });
       index = 1;
@@ -87,16 +88,29 @@ $(function () {
     if (index == length - 1) {
       // 如果索引值为最大值，那么就给第一个小圆点添加类名，其他兄弟删除类名
       $('.banner ol li').eq(0).addClass('on').siblings().removeClass('on');
+      // index = 0;
     } else {
       $('.banner ol li').eq(index).addClass('on').siblings().removeClass('on');
     }
+
+    var banner_text_li = $('.banner_text').find('li')
+    // for (let i = 0; i < banner_text_li.length; i++) {
+    //   banner_text_li[i].css("display","none")
+    //   console.log(banner_text_li[i])
+    // }
+    console.log(index)
+    banner_text_li.css("display","none")
+    if (index == 0 || index == 8) {
+      banner_text_li[0].style.display = "block"
+    }else{
+      banner_text_li[index].style.display = "block"
+    }
+    
+
+    // banner_text_li[0].css("display","black")
+    // console.log(banner_text_li[0].style.display)
   }
 
-  var banner_text_li = $('.banner_text').find('li')
-  // for (let i = 0; i < banner_text_li.length; i++) {
-  //   banner_text_li[i].css('display','none')
-    
-  // }
-  console.log(banner_text_li)
+  
 })
 

@@ -159,7 +159,8 @@ li{list-style: none;}
 
 .page4 .page-inner{
   box-sizing: border-box;
-  padding-bottom: 9%;
+  padding-bottom: 13%;
+  position: relative;
 }
 .page4 .banner{
 	width: 750px;
@@ -205,8 +206,6 @@ li{list-style: none;}
 .page4 .banner .btn{
 	width: 30px;
 	height: 50px;
-	background-color: #808080;
-	opacity: .2;
 	position: absolute;
 	top: 50%;
 	margin-top: -25px;
@@ -217,9 +216,6 @@ li{list-style: none;}
 	color: #fff;
 	font-family: '宋体';
 }
-.page4 .banner .btn:hover{
-	opacity: .5;
-}
 .page4 .banner .btn_l{
 	left: 0;
 }
@@ -229,21 +225,33 @@ li{list-style: none;}
 
 .page4 .page-inner .banner_text{
   width: 750px;
-  height: 649px;
+  height: 750px;
   overflow: hidden;
 }
 
 .page4 .page-inner .banner_text ul{
   width: 750px;
-  height: 649px;
+  height: 750px;
   overflow: hidden;
 }
 
 .page4 .page-inner .banner_text ul li{
   width: 750px;
-  height: 649px;
+  height: 750px;
   overflow: hidden;
   font-size: 0px;
+}
+
+.page4 .page-inner .banner_text ul li:nth-of-type(7){
+  background: url('../images/banner7_text_bg.png') center center no-repeat;
+  box-sizing: border-box;
+  padding-top: 72px;
+}
+
+.page4 .page-inner .banner_text ul li:nth-of-type(7) div{
+  width: 750px;
+  height: 549px;
+  overflow: scroll;
 }
 
 .page4 .page-inner .banner_text img{
@@ -261,7 +269,11 @@ li{list-style: none;}
   background: url('../images/but_bg.png') center center no-repeat;
 }
 
-
+.page4 .page-inner .code{
+  position: absolute;
+  right: 9%;
+  bottom: 3%;
+}
 
 
 

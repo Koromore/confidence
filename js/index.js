@@ -33,7 +33,7 @@ var baseUrl = window.location.href.split('index')[0];
 var height = window.innerHeight;
 var app = new PageSlider({
     pages: $('.page-wrap .page'),
-    dev: 3,
+    dev: 2,
     // musicUrl: 'music/bg.mp3?666',
     baseUrl: baseUrl, //
     shareUrl:'http://h5.weiyihui.cn/ztwxshare/index.php',

@@ -39,7 +39,7 @@ function compress(src) {
     img.src = src;
   })
 }
-var img_url = 'images/result3.png'
+var img_url = 'images/result4.png'
 compress(img_url).then(function (data) {
   $('.result_img').attr("src", data);
 })
