@@ -40,7 +40,10 @@
         <div class="content">
           <img src="images/year.png" alt="" srcset="">
           <img src="images/title.png" alt="" srcset="">
-          <img src="images/fingerprint.png" alt="" srcset="" class="next">
+          <div class="next">
+            <img src="images/fingerprint.png" alt="" srcset="">
+            <div class="shade_box"><div class="shade"></div></div>
+          </div>
           <img src="images/hint.png" alt="" srcset="">
           <img src="images/rule.png" alt="" srcset="" class="rule">
         </div>
@@ -53,24 +56,27 @@
       <div class="page-inner">
         <div class="content">
           <div class="face_img_box">
-            <div class="face_img"></div>
+            <div class="face_img">
+                <input type="file" name="" class="add_file">
+                <img src="./images/add.png" class="cover_add">
+            </div>
           </div>
-          <!-- <div class="hint hint1">
+          <div class="hint hint1">
             <img src="images/partition2.png" alt="" srcset=""><br>
             点击 <img src="images/add_s.png">，上传图片
-          </div> -->
-          <!-- <div class="hint hint2">
-            <div>重新上传</div>
-            <div>确定</div>
-          </div> -->
-          <!-- <div class="hint hint3">
-            <div>49<span>%</span></div>
+          </div>
+          <div class="hint hint2">
+            <div class="upload_again">重新上传</div>
+            <div id="scan">确定</div>
+          </div>
+          <div class="hint hint3">
+            <div><span id="percentum">0</span><span>%</span></div>
             <div>正在检测中...</div>
-          </div> -->
-          <!-- <div class="hint hint4">
+          </div>
+          <div class="hint hint4">
             <img src="images/partition2.png" alt="" srcset=""><br>
             非人脸照片，请重新上传
-          </div> -->
+          </div>
           <div class="hint hint5">
             <img src="images/partition2.png" alt="" srcset=""><br>
             请上传正面人脸照片
@@ -81,26 +87,27 @@
     <!-- page2 end -->
 
     <!-- page3 start -->
-    <div class="page page3" data-lock-next="true" data-lock-prev="true">
+    <div class="page page3" data-lock-next="true" data-lock-prev="true" data-scroller="true" data-height="1448">
       <div class="page-inner">
-        <div class="img_box">
+        <!-- <div class="img_box"> -->
           <img src="" width="100%" alt="" srcset="" class="result_img">
-        </div>
+        <!-- </div> -->
 
         <!-- <div class="name">
           解雨臣
         </div> -->
         <div class="but">
-          <div>重新测算</div>
-          <div>轻松入手</div>
+          <div id="to_calculate">重新测算</div>
+          <div id="to_end">轻松入手</div>
           <p>长按保存图片到相册</p>
         </div>
+        
       </div>
     </div>
     <!-- page3 end -->
 
     <!-- page4 start -->
-    <div class="page page4" data-lock-next="true" data-lock-prev="true">
+    <div class="page page4" data-lock-next="true" data-lock-prev="true"  data-scroller="true" data-height="1448">
       <div class="page-inner">
         <div class="banner">
           <ul>
@@ -133,7 +140,7 @@
             <li><img src="images/banner8_text.png" alt=""></li>
           </ul>
         </div>
-        <div class="but">
+        <div class="but" id="end_but">
           即可带走
         </div>
         <div class="code"><img src="images/cod.jpg" alt="" srcset=""></div>
@@ -145,7 +152,6 @@
 
   <!-- 弹框 -->
   <div class="el-model">
-
     <div class="el-contaoner zoomIn">
       <!-- <div class="el-header">提示</div> -->
       <div class="el-content">
@@ -170,11 +176,13 @@
     </div>
   </div>
   <!-- <script src="js/jquery-1.7.2.min.js"></script> -->
+  <script src="js/lrz.mobile.min.js"></script>
   <script src="js/PageSlider.js"></script>
+  <script src="js/compress.js?999"></script>
   <script src="js/index.js?999"></script>
   <script src="js/claw.js?999"></script>
   <script src="js/page.js?999"></script>
-  <script src="js/compress.js?999"></script>
+  
   <script type="text/javascript">
     $(document).ready(function () {
       $("body").height($("body")[0].clientHeight)

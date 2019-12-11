@@ -1,27 +1,27 @@
 
 // 弹框
-function showModel(html){
+function showModel(html) {
     $('.el-content').html(html);
     $('.el-model').show();
 }
-function randomNum(min,max){
+function randomNum(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-$('.el-success').on("click",function(e){
+$('.el-success').on("click", function (e) {
     $('.el-model').hide();
 });
 
-function ajax(url,data) {
-    return new Promise(function(resolve, reject) {
+function ajax(url, data) {
+    return new Promise(function (resolve, reject) {
         $.ajax({
             url: url,
             type: 'POST',
-            data:data || {},
+            data: data || {},
             dataType: 'json',
             success: function (data) {
                 resolve(data)
             },
-            error:function (err) {
+            error: function (err) {
                 reject(err)
             }
         });
@@ -33,12 +33,15 @@ var baseUrl = window.location.href.split('index')[0];
 var height = window.innerHeight;
 var app = new PageSlider({
     pages: $('.page-wrap .page'),
-    dev: 2,
+    dev: 3,
     // musicUrl: 'music/bg.mp3?666',
     baseUrl: baseUrl, //
-    shareUrl:'http://h5.weiyihui.cn/ztwxshare/index.php',
+    shareUrl: 'http://h5.weiyihui.cn/ztwxshare/index.php',
 });
 
+// if (height <= 1450) {
+//     $('.page .page-inner').css('top', -(1450 - height) / 2 + 'px');
+// }
 
 var shareText = [
     '这！这！这！！我上一世竟然是！！！',
@@ -50,7 +53,12 @@ var shareText = [
 ]
 
 
-app.wxShare('中秋月圆夜，映sir穿越时', shareText[randomNum(0,5)], app.baseUrl+'index.php', app.baseUrl + 'images/share.jpg');
+app.wxShare(
+    '中秋月圆夜，映sir穿越时', // 标题
+    shareText[randomNum(0, 5)], // 内容
+    app.baseUrl + 'index.php', // 接口
+    app.baseUrl + 'images/share.jpg' // 图片
+);
 
 
 
@@ -61,9 +69,9 @@ var pre_resource = [
     'images/orient.png',
 ];
 
-app._loadimg(pre_resource,function(process){
-    $(".load-tet").html('加载'+Math.floor(process)+"%");
-},function(){
+app._loadimg(pre_resource, function (process) {
+    $(".load-tet").html('加载' + Math.floor(process) + "%");
+}, function () {
     $('.loading').fadeOut(100);
     $('.wrap').removeClass('none');
 });
