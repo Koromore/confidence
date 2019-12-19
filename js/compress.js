@@ -1,4 +1,5 @@
 function compress(src) {
+  
   return new Promise(function (resolve, reject) {
     // 缩放图片需要的canvas
     var canvas = document.createElement('canvas');
